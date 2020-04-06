@@ -1,4 +1,4 @@
-export const robots = [
+export const characters = [
   {
     id: 10,
     name: 'Leanne Graham',
@@ -30,7 +30,7 @@ export const robots = [
     email: 'Lucio_Hettinger@annie.ca',
   },
   {
-    id: 17,
+    id: 20,
     name: 'Mrs. Dennis Schulist',
     username: 'Leopoldo_Corkery',
     email: 'Karley_Dach@jasper.info',
