@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import CardList from './CardList';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
-import { characters } from './characters';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CardList characters={characters} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
