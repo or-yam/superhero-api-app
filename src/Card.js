@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ name, email, id }) => {
   return (
-    <div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+    <div className="tc bg-light-yellow dib br3 pa3 ma2 grow bw2 shadow-5">
       <img
         alt="profile"
         src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}
