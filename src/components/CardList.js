@@ -10,7 +10,8 @@ const CardList = ({ characters }) => {
             key={i}
             id={characters[i].id}
             name={characters[i].name}
-            email={characters[i].email}
+            race={characters[i].appearance.race}
+            image={characters[i].images.md}
           />
         );
       })}

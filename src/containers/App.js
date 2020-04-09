@@ -36,7 +36,7 @@ class App extends Component {
       </div>
     ) : (
       <div className="tc">
-        <h1 className="f1">Star Wars Characters</h1>
+        <h1 className="f1">Super Heroes Characters</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
           <CardList characters={filterCharacters} />
