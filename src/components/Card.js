@@ -19,4 +19,3 @@ const Card = ({ name, email, id }) => {
 
 export default Card;
 
-// let json = GET https://superheroapi.com/api/10221129921332633/id/image
