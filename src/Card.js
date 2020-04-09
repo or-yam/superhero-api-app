@@ -5,7 +5,7 @@ const Card = ({ name, email, id }) => {
     <div className="tc bg-light-yellow dib br3 pa3 ma2 grow bw2 shadow-5">
       <img
         alt="profile"
-        src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}
+        src={`https://superheroapi.com/api/10221129921332633/${id}/image`.url}
         width="200"
         height="200"
       />
@@ -18,3 +18,5 @@ const Card = ({ name, email, id }) => {
 };
 
 export default Card;
+
+// let json = GET https://superheroapi.com/api/10221129921332633/id/image
