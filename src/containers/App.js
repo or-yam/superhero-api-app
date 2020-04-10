@@ -38,6 +38,7 @@ class App extends Component {
       <div className="tc">
         <h1 className="f1">Super Heroes Characters</h1>
         <SearchBox searchChange={this.onSearchChange} />
+        <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
           <CardList characters={filterCharacters} />
         </Scroll>
