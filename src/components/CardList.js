@@ -10,7 +10,7 @@ const CardList = ({ characters }) => {
             key={i}
             id={characters[i].id}
             name={characters[i].name}
-            race={characters[i].appearance.race}
+            publisher={characters[i].biography.publisher}
             image={characters[i].images.md}
           />
         );
