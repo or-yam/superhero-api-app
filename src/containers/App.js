@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     fetch('https://akabab.github.io/superhero-api/api/all.json')
       .then((response) => response.json())
-      .then((characters) => this.setState({ characters: characters }));
+      .then((characters) => this.setState({ characters: characters }))
   }
 
   onSearchChange = (event) => {
@@ -37,7 +37,6 @@ class App extends Component {
     ) : (
       <div className="tc">
         <h1 className="f1">Super Heroes Characters</h1>
-        <SearchBox searchChange={this.onSearchChange} />
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
           <CardList characters={filterCharacters} />
