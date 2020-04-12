@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/superhero-api-app/static/css/main.4c3296a3.chunk.css",
-    "main.js": "/superhero-api-app/static/js/main.87672495.chunk.js",
-    "main.js.map": "/superhero-api-app/static/js/main.87672495.chunk.js.map",
-    "runtime-main.js": "/superhero-api-app/static/js/runtime-main.cc42d93d.js",
-    "runtime-main.js.map": "/superhero-api-app/static/js/runtime-main.cc42d93d.js.map",
+    "main.js": "/superhero-api-app/static/js/main.cfaab375.chunk.js",
+    "main.js.map": "/superhero-api-app/static/js/main.cfaab375.chunk.js.map",
+    "runtime-main.js": "/superhero-api-app/static/js/runtime-main.cf5031c5.js",
+    "runtime-main.js.map": "/superhero-api-app/static/js/runtime-main.cf5031c5.js.map",
     "static/css/2.3b6f1bda.chunk.css": "/superhero-api-app/static/css/2.3b6f1bda.chunk.css",
-    "static/js/2.ac08eab5.chunk.js": "/superhero-api-app/static/js/2.ac08eab5.chunk.js",
-    "static/js/2.ac08eab5.chunk.js.map": "/superhero-api-app/static/js/2.ac08eab5.chunk.js.map",
+    "static/js/2.8fe60fac.chunk.js": "/superhero-api-app/static/js/2.8fe60fac.chunk.js",
+    "static/js/2.8fe60fac.chunk.js.map": "/superhero-api-app/static/js/2.8fe60fac.chunk.js.map",
     "index.html": "/superhero-api-app/index.html",
-    "precache-manifest.ff25d65218070053454097007745012a.js": "/superhero-api-app/precache-manifest.ff25d65218070053454097007745012a.js",
+    "precache-manifest.1df1d30cc9ef45e0089c11e3593e9a20.js": "/superhero-api-app/precache-manifest.1df1d30cc9ef45e0089c11e3593e9a20.js",
     "service-worker.js": "/superhero-api-app/service-worker.js",
     "static/css/2.3b6f1bda.chunk.css.map": "/superhero-api-app/static/css/2.3b6f1bda.chunk.css.map",
     "static/css/main.4c3296a3.chunk.css.map": "/superhero-api-app/static/css/main.4c3296a3.chunk.css.map",
-    "static/js/2.ac08eab5.chunk.js.LICENSE.txt": "/superhero-api-app/static/js/2.ac08eab5.chunk.js.LICENSE.txt",
+    "static/js/2.8fe60fac.chunk.js.LICENSE.txt": "/superhero-api-app/static/js/2.8fe60fac.chunk.js.LICENSE.txt",
     "static/media/App.css": "/superhero-api-app/static/media/intsh.c6a0f798.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc42d93d.js",
+    "static/js/runtime-main.cf5031c5.js",
     "static/css/2.3b6f1bda.chunk.css",
-    "static/js/2.ac08eab5.chunk.js",
+    "static/js/2.8fe60fac.chunk.js",
     "static/css/main.4c3296a3.chunk.css",
-    "static/js/main.87672495.chunk.js"
+    "static/js/main.cfaab375.chunk.js"
   ]
 }
