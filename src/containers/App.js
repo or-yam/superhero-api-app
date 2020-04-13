@@ -39,12 +39,13 @@ class App extends Component {
       <div className="tc">
         <h1 className="f1 v-mid">COMICS CHARACTERS</h1>
         <SearchBox searchChange={this.onSearchChange} />
-        <Scroll>
-          <ErrorBoundry>
+
+        <ErrorBoundry>
+          <Scroll>
             <CardList characters={filterCharacters} />
-          </ErrorBoundry>
-        </Scroll>
-        <footer className="white f2">made thanks to superheroapi.com</footer>
+          </Scroll>
+        </ErrorBoundry>
+        <footer className="gold f3">data and images - superheroapi.com</footer>
       </div>
     );
   }
