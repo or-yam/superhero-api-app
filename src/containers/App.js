@@ -37,7 +37,7 @@ class App extends Component {
       </div>
     ) : (
       <div className="tc">
-        <h1 className="f1 v-mid">COMICS CHARACTERS</h1>
+        <h1 className="f1 v-mid">COMICS SUPER-HEROES</h1>
         <SearchBox searchChange={this.onSearchChange} />
 
         <ErrorBoundry>
@@ -45,7 +45,9 @@ class App extends Component {
             <CardList characters={filterCharacters} />
           </Scroll>
         </ErrorBoundry>
-        <footer className="gold f3">data and images - superheroapi.com</footer>
+        <footer className="f3">
+          All data and images from superheroapi.com
+        </footer>
       </div>
     );
   }
