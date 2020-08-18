@@ -4,14 +4,14 @@ import Card from './Card';
 const CardList = ({ characters }) => {
   return (
     <div>
-      {characters.map((user, i) => {
+      {characters.map((character, i) => {
         return (
           <Card
             key={i}
-            id={characters[i].id}
-            name={characters[i].name}
-            publisher={characters[i].biography.publisher}
-            image={characters[i].images.md}
+            id={character.id}
+            name={character.name}
+            publisher={character.biography.publisher}
+            image={character.images.md}
           />
         );
       })}
