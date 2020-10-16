@@ -1,4 +1,4 @@
-# Super-Heroes Search Cards
+# Super-Heroes Dynamic Search Cards
 
 ## React app using [super-heros-API](https://akabab.github.io/superhero-api/)
 
