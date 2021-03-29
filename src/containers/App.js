@@ -3,6 +3,8 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
+import LoadingMessage from '../components/LoadingMessage';
+import { fetchCharacters } from '../services/api';
 import './App.css';
 
 export default function App() {
@@ -10,26 +12,25 @@ export default function App() {
   const [searchField, setSearchField] = useState('');
 
   useEffect(() => {
-    fetch('https://akabab.github.io/superhero-api/api/all.json')
-      .then((response) => response.json())
-      .then((characters) => setCharacters(characters));
+    (async () => {
+      const charactersData = await fetchCharacters();
+      setCharacters(charactersData);
+    })();
   }, []);
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value);
   };
 
-  const filterCharacters = characters.filter((character) => {
-    return character.name
-      .toLocaleLowerCase()
-      .includes(searchField.toLocaleLowerCase());
-  });
+  const filterCharacters = characters.filter(({ name }) =>
+    name.toLocaleLowerCase().includes(searchField.toLocaleLowerCase())
+  );
 
-  return !characters.length ? (
-    <div className="tc">
-      <h1 className="f2">LOADING CHARACTERS...</h1>
-    </div>
-  ) : (
+  if (!characters.length) {
+    return <LoadingMessage />;
+  }
+
+  return (
     <div className="tc">
       <h1 className="f1 v-mid">COMICS SUPER-HEROES</h1>
       <SearchBox searchChange={onSearchChange} />
@@ -39,6 +40,7 @@ export default function App() {
           <CardList characters={filterCharacters} />
         </Scroll>
       </ErrorBoundry>
+
       <footer className="f3">All data and images from superhero-api.com</footer>
     </div>
   );

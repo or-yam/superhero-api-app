@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Scroll = (props) => {
+const Scroll = ({ children }) => {
   return (
     <div
       style={{
@@ -8,7 +8,7 @@ const Scroll = (props) => {
         height: '800px',
       }}
     >
-      {props.children}
+      {children}
     </div>
   );
 };

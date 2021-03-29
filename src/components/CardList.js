@@ -1,21 +1,20 @@
 import React from 'react';
 import Card from './Card';
 
-const CardList = ({ characters }) => {
-  return (
-    <div>
-      {characters.map((character, i) => {
-        return (
-          <Card
-            key={i}
-            id={character.id}
-            name={character.name}
-            publisher={character.biography.publisher}
-            image={character.images.md}
-          />
-        );
-      })}
-    </div>
-  );
-};
+const CardList = ({ characters }) => (
+  <div>
+    {characters.map(({ id, name, biography, images }) => {
+      return (
+        <Card
+          key={id}
+          id={id}
+          name={name}
+          publisher={biography.publisher}
+          image={images.md}
+        />
+      );
+    })}
+  </div>
+);
+
 export default CardList;
